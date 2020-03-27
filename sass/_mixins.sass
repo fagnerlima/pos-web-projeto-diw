@@ -1,0 +1,16 @@
+@mixin calc-grid($length, $col)
+  width: calc(100% / (#{$length} / #{$col}))
+@mixin calc-offset-grid($length, $col)
+  margin-left: calc(100% / (#{$length} / #{$col}))
+@mixin margin-top-bottom($value)
+  margin-bottom: $value
+  margin-top: $value
+@mixin margin-left-right($value)
+  margin-left: $value
+  margin-right: $value
+@mixin padding-top-bottom($value)
+  padding-bottom: $value
+  padding-top: $value
+@mixin padding-left-right($value)
+  padding-left: $value
+  padding-right: $value

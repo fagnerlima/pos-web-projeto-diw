@@ -1,0 +1,48 @@
+$home-text-shadow: 0 2px 0 #000, 0 0 3px #000
+
+body
+  #home
+    align-items: center
+    background-image: url('../images/bg-home.jpg')
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    display: flex
+    height: calc(100vh - 50px)
+    justify-content: center
+    position: relative
+    width: 100%
+    .info
+      margin-top: -25px
+      h1
+        color: #fff
+        font-size: 2rem
+        margin: 10px 0
+        text-shadow: $home-text-shadow
+      h2
+        color: #fff
+        font-size: 1rem
+        font-weight: bold
+        text-shadow: $home-text-shadow
+        @media (min-width: $breakpoint-sm)
+          font-size: 1.2em
+        @media (min-width: $breakpoint-md)
+          font-size: 1.4em
+        @media (min-width: $breakpoint-lg)
+          font-size: 1.6em
+    .forward
+      @include padding-top-bottom(10px)
+      bottom: 0
+      display: block
+      position: absolute
+      width: 100%
+      a
+        .fas
+          color: #fff
+          font-size: 1.8em
+          text-shadow: $home-text-shadow
+          transition-duration: 0.5s
+        &:hover
+          .fas
+            transform: scale(1.2)
+            transition-duration: 0.3s

@@ -1,0 +1,88 @@
+body
+  nav
+    &.main
+      background-color: $main-nav-background-color
+      color: $main-nav-color
+      height: 50px
+      position: fixed
+      top: 0
+      width: 100%
+      z-index: 3
+      a
+        color: inherit
+        transition-duration: 0.4s
+        &:hover,
+        &:focus
+          color: $main-nav-color-hover
+          text-decoration: none
+        &.logotipo
+          display: inline-block
+          font-size: 40px
+          height: 50px
+          padding: 5px
+          text-align: center
+          width: 50px
+      button
+        &.main-menu
+          background-color: inherit
+          border: none
+          color: inherit
+          height: 50px
+          position: absolute
+          right: 0
+          transition-duration: 0.4s
+          width: 50px
+          .icon
+            font-size: 2em
+          @media screen and (min-width: $breakpoint-md)
+            display: none
+          &:hover
+            color: $main-nav-color-hover
+      ul
+        &.main-menu
+          background-color: inherit
+          display: none
+          list-style: none
+          padding: 0
+          z-index: 3
+          @media screen and (min-width: $breakpoint-md)
+            display: inline-block
+            left: 60px
+            position: absolute
+            top: 0
+            width: calc(100% - 50px)
+          li
+            @media screen and (min-width: $breakpoint-md)
+              display: inline-block
+              float: left
+            a
+              display: block
+              font-size: 1.2em
+              height: 50px
+              padding: 14px 10px
+              @media screen and (min-width: $breakpoint-md)
+                padding: 14px 15px
+              &:hover
+                background-color: $main-nav-link-background-color-hover
+                color: inherit
+          .social
+            border-top: 1px solid #ccc
+            display: table
+            margin-top: 5px
+            padding-top: 5px
+            width: 100%
+            @media screen and (min-width: $breakpoint-md)
+              border-top: none
+              margin-top: 0
+              padding-top: 0
+              position: absolute
+              right: 10px
+              width: auto
+            a
+              display: inline-block
+              font-size: 26px
+              height: 50px
+              padding: 12px 10px
+              &:hover
+                background-color: transparent
+                color: $main-nav-color-hover

@@ -1,0 +1,40 @@
+body
+  .container
+    @include padding-left-right(15px)
+    margin: 0 auto
+    @media (min-width: $breakpoint-lg)
+      width: calc(#{$breakpoint-lg} - 18px)
+    @media (min-width: $breakpoint-xl)
+      width: calc(#{$breakpoint-xl} - 18px)
+  .row
+    @include padding-left-right(15px)
+    display: flex
+    flex-wrap: wrap
+    [class^="col-"]
+      padding: .5em
+      width: 100%
+    @for $col from 1 through $grid-length
+      .col-sm-#{$col}
+        @media (min-width: $breakpoint-sm) and (max-width: calc($breakpoint-dm - 1))
+          @include calc-grid($grid-length, $col)
+      .offset-sm-#{$col}
+        @media (min-width: $breakpoint-sm)
+          @include calc-offset-grid($grid-length, $col)
+      .col-md-#{$col}
+        @media (min-width: $breakpoint-md)
+          @include calc-grid($grid-length, $col)
+      .offset-md-#{$col}
+        @media (min-width: $breakpoint-md)
+          @include calc-offset-grid($grid-length, $col)
+      .col-lg-#{$col}
+        @media (min-width: $breakpoint-lg)
+          @include calc-grid($grid-length, $col)
+      .offset-lg-#{$col}
+        @media (min-width: $breakpoint-lg)
+          @include calc-offset-grid($grid-length, $col)
+      .col-xl-#{$col}
+        @media (min-width: $breakpoint-xl)
+          @include calc-grid($grid-length, $col)
+      .offset-xl-#{$col}
+        @media (min-width: $breakpoint-xl)
+          @include calc-offset-grid($grid-length, $col)
