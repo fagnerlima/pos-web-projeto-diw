@@ -9,7 +9,7 @@ body
       width: 100%
       z-index: 3
       a
-        color: inherit
+        color: $main-nav-color
         transition-duration: 0.4s
         &:hover,
         &:focus
@@ -24,9 +24,9 @@ body
           width: 50px
       button
         &.main-menu
-          background-color: inherit
+          background-color: $main-nav-background-color
           border: none
-          color: inherit
+          color: $main-nav-color
           height: 50px
           position: absolute
           right: 0
@@ -40,7 +40,7 @@ body
             color: $main-nav-color-hover
       ul
         &.main-menu
-          background-color: inherit
+          background-color: $main-nav-background-color
           display: none
           list-style: none
           padding: 0
@@ -64,7 +64,6 @@ body
                 padding: 14px 15px
               &:hover
                 background-color: $main-nav-link-background-color-hover
-                color: inherit
           .social
             border-top: 1px solid #ccc
             display: table

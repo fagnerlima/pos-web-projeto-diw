@@ -15,7 +15,7 @@ Requisitos da página:
 - Pode usar o jquery (caso não use, reveja como fazer o Paralax)
 - Não pode usar o BOOTSTRAP para estruturar a página. Mas pode usar para os componentes internos (o mesmo para qq framework de interface)
 - O estilo deverá ser escrito em SASS
-- A pasta principal do projeto deverá conter "Seu nome" (como a pasta raiz). 
+- A pasta principal do projeto deverá conter "Seu nome" (como a pasta raiz).
 - As pastas internas são "img" "css" "js". Não esqueçam do index.html e contato.html
 
 No final cada aluno entregará

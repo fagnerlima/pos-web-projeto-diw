@@ -12,8 +12,24 @@ body
     justify-content: center
     position: relative
     width: 100%
+    .buttons
+      padding: 10px
+      position: absolute
+      right: 0
+      top: 0
+      .btn
+        background-color: $home-button-background-color
+        color: $home-button-color
+        margin-right: 5px
+        &:hover
+          background-color: $home-button-background-color-hover
+          color: $home-button-color-hover
+          box-shadow: $home-button-box-shadow-hover
+        &:last-child
+          margin-right: 0
     .info
       margin-top: -25px
+      user-select: none
       h1
         color: #fff
         font-size: 2rem
