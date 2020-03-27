@@ -7,6 +7,10 @@
   <title>Contato - Projeto Final &raquo; DIW</title>
 
   <link rel="stylesheet" href="css/style.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="js/contrast.js"></script>
+  <script src="js/script.js"></script>
 </head>
 <body id="topo">
   <div id="site-mask"></div>
@@ -45,8 +49,37 @@
       <hr>
       <div class="row">
         <div class="col-md-6 offset-md-3 text-justify">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, beatae! Distinctio amet voluptatibus, ullam modi
-            assumenda quibusdam molestiae qui? Rem numquam iste quibusdam, ullam asperiores culpa enim optio provident quidem?</p>
+          <form class="form" action="" method="POST">
+            <fieldset class="fieldset">
+              <legend>Dados Pessoais</legend>
+              <div class="form-group">
+                <label class="control-label" for="nome">Nome:</label>
+                <input type="text" class="form-control" id="nome" name="nome" required>
+              </div>
+              <div class="form-group">
+                <label class="control-label" for="telefone">Telefone:</label>
+                <input type="tel" class="form-control" id="telefone" name="telefone" required>
+              </div>
+            </fieldset>
+            <fieldset class="fieldset">
+              <legend>Dados Profissionais</legend>
+              <div class="form-group">
+                <label class="control-label" for="email">E-mail:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label class="control-label" for="lattes">Lattes:</label>
+                <input type="text" class="form-control" id="lattes" name="lattes">
+              </div>
+            </fieldset>
+            <div class="form-group">
+              <label class="control-label" for="mensagem">Mensagem:</label>
+              <textarea class="form-control" id="mensagem" name="mensagem" required></textarea>
+            </div>
+            <div class="form-group">
+              <button class="btn btn-primary" type="submit">Enviar</button>
+            </div>
+          </form>
         </div>
       </div>
     </article>
@@ -54,13 +87,10 @@
 
   <footer class="main">
     <span class="rights">
-      &copy; 2012-<span class="actual-year"></span> FagnerLima.
+      &copy; 2012-<span class="actual-year"></span> Fagner Lima.
       <br>
       Todos os direitos reservados.
     </span>
   </footer>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-  <script src="js/script.js"></script>
 </body>
 </html>

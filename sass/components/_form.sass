@@ -1,0 +1,36 @@
+body
+  .form
+    color: $body-color
+    .fieldset
+      border: $fieldset-border
+      border-radius: 5px
+      margin-bottom: 10px
+      padding: 5px 10px 10px
+      legend
+        border: $fieldset-border
+        border-radius: 5px
+        padding: 0 5px
+        user-select: none
+    .form-group
+      margin-bottom: 10px
+    .control-label
+      cursor: pointer
+    .form-control
+      background-color: $form-control-background-color
+      border: $form-control-border
+      border-radius: 3px
+      color: $form-control-color
+      display: block
+      font-size: 1rem
+      padding: 5px
+      width: 100%
+    textarea
+      &.form-control
+        font-family: inherit
+        height: 150px
+  &.dark
+    .form
+      color: $body-color-dark
+      .form-control
+        background-color: $form-control-background-color-dark
+        color: $form-control-color-dark
